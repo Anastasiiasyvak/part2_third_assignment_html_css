@@ -1,0 +1,27 @@
+table {
+    width: 50%;
+}
+
+td {
+    border: 2px solid #000000;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(15, 119, 20);
+}
+
+td:hover {
+    background-color: #7ce21c; 
+    border-color: rgb(240, 124, 29);
+}
+
+td:active{
+    background-color: #f88f5f; 
+    border-color: rgb(255, 81, 0);
+    border-radius: 10vb;
+
+}
+
+  table, th, td {
+    border-collapse: collapse;
+    border-style: ridge;
+  }

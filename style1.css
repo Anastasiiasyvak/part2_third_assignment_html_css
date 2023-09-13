@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, nav, ul, li, p{
+    display: inline-flex;
+}
+
+li{
+    border: 3px solid rgb(6, 88, 24);
+    margin: 0;
+    padding: 0;
+
+}
+
+li:hover{
+    border: 1px solid rgb(49, 199, 49);
+}
+
+li:active{
+    border-color: rgb(0, 255, 255);
+}
+

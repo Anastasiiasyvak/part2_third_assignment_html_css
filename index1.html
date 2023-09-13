@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>second part</title>
+    <link rel="stylesheet" href="style1.css"/>
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="stylesheet" href="style3.css"/>
+    <link rel="stylesheet" id="styles-id" href=""/>
+
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Products</th>
+                <th>Q1 revenue</th>
+                <th>Q2 revenue</th>
+                <th>Q3 revenue</th>
+                <th>Q4 revenue</th>
+                <th>Year-end total</th>
+            </tr>
+            <tr>
+                <td>Product A</td>
+                <td>255750</td>
+                <td>265500</td>
+                <td>278500</td>
+                <td>285600</td>
+                <td>1085350</td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td>126600</td>
+                <td>177000</td>
+                <td>165650</td>
+                <td>169500</td>
+                <td>638750</td>
+            </tr>
+            <tr>
+                <td>Service A</td>
+                <td>95600</td>
+                <td>98500</td>
+                <td>87550</td>
+                <td>88600</td>
+                <td>370250</td>
+            </tr>
+            <tr>
+                <td>Totals by quarter</td>
+                <td>477950</td>
+                <td>541000</td>
+                <td>531700</td>
+                <td>543700</td>
+                <td>2094350</td>
+            </tr>
+           
+
+        </thead>
+    </table>
+    
+<strong style="font-size:60px">Buttons for changing style</strong>
+    <div > 
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <button onclick="updateStylesheetHref('style2.css')">Style1</button>
+                    </li>
+                    <li>
+                        <button onclick="updateStylesheetHref('style3.css')">Style2</button>
+                    </li>
+                    <li>
+                        <button onclick="updateStylesheetHref('style4.css')">Style3</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>  
+    </div>
+
+    <script>
+        function updateStylesheetHref(newHref) {
+                let stylesheet = document.getElementById("styles-id");
+                if (stylesheet) {
+                    stylesheet.href = newHref;
+                } else {
+                    console.error("Stylesheet not found!");
+                }
+            }
+        </script>
+        
+        
+</body>
+</html>
